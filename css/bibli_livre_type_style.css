@@ -1,0 +1,51 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: saddlebrown;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+
+main{
+    width: 98%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+h1{
+    font-size:large;
+}
+
+.gauche{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22%;
+}
+
+.droite{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75%;
+}

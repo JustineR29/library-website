@@ -1,0 +1,49 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: saddlebrown;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    width: 98%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main>.livres_cases
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 2px solid black;
+    width: 80%;
+    overflow:hidden;
+}
+main>.livres_cases>h1
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
