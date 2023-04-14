@@ -1,0 +1,71 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: saddlebrown;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2, p{
+    text-align: center;
+}
+h1{
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main{
+    width: 98%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+section{
+    width: 30%;
+}
+main>section>form{
+    border: 2px solid black;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+legend{
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 0;
+}
+input{
+    border: 1px solid black;
+}
+input:required{
+    border: 2px solid black;
+}
+
+
+.valider{
+    display: block;
+    margin:auto;
+    margin-top: 1vh;
+}
