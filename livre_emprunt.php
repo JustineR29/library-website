@@ -1,5 +1,5 @@
 <article class="livre_emprunt">
-   <img src="media/img/<?php echo($rows['image']); ?>.jpg" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" /></a>
+   <img src="media/img/cover/<?php echo($rows['image']); ?>.webp" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" /></a>
    
    <p><strong>**</strong>***</p> <!--moyenne ?-->
    

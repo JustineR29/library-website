@@ -10,7 +10,7 @@
             </ul>
         <li>Suggestion</li>
                
-        <img src="#.webp" class="couverture" alt="#" title="#" />
+        <img src="media/img/cover/#.webp" class="couverture" alt="#" title="#" />
         </ul>  <!--image livre avec mêmes tags ?-->
 </article>
 <style>

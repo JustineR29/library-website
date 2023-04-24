@@ -15,6 +15,9 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    background: rgb(88, 88, 88);
+    background: #3A577C;
+}
+footer a{
+    color: #d6c49d;
 }
 </style>

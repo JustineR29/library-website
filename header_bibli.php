@@ -3,7 +3,7 @@
     <form method="post" action="traitement_recherche.php">
         <p><label for="search">Rechercher :</label>
             <input type="search" name="search" id="search" size="20" placeholder="titre, auteur, mot-clé..."/></p></form>
-
+        <img src="media/assets/etre_papier_long.webp" alt="L'être de papier">
         <p><a href="inscription.php">Connexion/Inscription</a></p>  <!--à remplacer par Nom utilisateur une fois connecté : -->
     </section>
    
@@ -28,7 +28,7 @@ header{
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
-    background: rgb(88, 88, 88);
+    background: #3A577C;
     margin-bottom: 10px;
 }
 
@@ -38,6 +38,12 @@ header>section:nth-child(1){
     justify-content: space-between;
     align-items: center;
     width: 98%;
+}
+header>section:nth-child(1) p, header>section:nth-child(1) a{
+    color: #d6c49d;
+}
+header>section:nth-child(1)>img{
+    width: 30%;
 }
 
 header>section:nth-child(2){
@@ -53,5 +59,7 @@ header>section:nth-child(2){
 header>section:nth-child(2)>a{
     margin-right: 1vw;
     margin-left: 1vw;
+    color: #d8c8a3;
 }
+
 </style>

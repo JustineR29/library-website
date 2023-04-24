@@ -17,18 +17,22 @@ a:hover{
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: saddlebrown;
+    background-color: #c5b488;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
 }
+
 main{
     width: 98%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    background: url("pierre.png") bottom left no-repeat;
+    background-size: 10%;
+    background-position-x: 4vw;
 }
 main>.livres_cases
 {
@@ -36,9 +40,10 @@ main>.livres_cases
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    border: 2px solid black;
+    border: 2px solid #897f66;
     width: 80%;
     overflow:hidden;
+    background: #eed5a1cf;
 }
 main>.livres_cases>h1
 {

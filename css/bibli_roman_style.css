@@ -6,7 +6,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: saddlebrown;
+    background-color: #c5b488;
     display:flex;
     flex-flow:column nowrap;
     justify-content: space-between;
@@ -35,7 +35,8 @@ main>section:nth-child(1){
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid black;
+    border: 2px solid #897f66;
+    background: #eed5a1cf;
     width: 18%;
     padding-left: 1vw;
     height: relative;
@@ -72,7 +73,8 @@ main>section:nth-child(2)
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    border: 2px solid black;
+    border: 2px solid #897f66;
+    background: #eed5a1cf;
     width: 80%;
     overflow:auto;
 }
@@ -83,7 +85,8 @@ article
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #897f66;
+    background: #eed5a1cf;
     width: 30%;
     height:60vh;
     margin-top: 2vh;

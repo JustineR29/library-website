@@ -6,7 +6,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: saddlebrown;
+    background-color: #c5b488;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -45,7 +45,8 @@ article{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #897f66;
+    background: #eed5a1cf;
     border-radius: 10px;
     margin-bottom: 2vh;
 }

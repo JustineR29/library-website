@@ -17,7 +17,7 @@ if ($mysqli->connect_error) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="media/assets/book.png" type="image/x-icon">
+    <link rel="shortcut icon" href="media/assets/pierre_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/bibli_liste_style.css?v=<?php echo time(); ?>">
     <title>Bibliothèque - Édition</title>
 </head>
@@ -36,7 +36,7 @@ if ($mysqli->connect_error) {
             $query=mysqli_query($mysqli, $sql);?>
             <article><a href="<?php echo mb_strtolower($rows['edition']); ?>.php">
                 <h2><?php echo mb_strtoupper($rows['edition']); ?></h2>
-                <img src="media/img/<?php echo mb_strtolower($rows['edition']); ?>.jpg" alt="<?php echo($rows['edition']); ?>" title="<?php echo($rows['edition']); ?>" />  
+                <img src="media/img/edition/<?php echo mb_strtolower($rows['edition']); ?>.webp" alt="<?php echo($rows['edition']); ?>" title="<?php echo($rows['edition']); ?>" />  
             </a></article>
             <?php
             }

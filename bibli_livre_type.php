@@ -25,7 +25,7 @@ if(isset($_GET['i'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="media/assets/book.png" type="image/x-icon">
+    <link rel="shortcut icon" href="media/assets/pierre_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/bibli_livre_type_style.css?v=<?php echo time(); ?>">
     <title>Bibliothèque - <?php echo($rows['title']); ?></title>
 </head>

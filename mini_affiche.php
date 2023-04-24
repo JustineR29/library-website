@@ -37,7 +37,7 @@ if ($mysqli->connect_error) {
                <?php
                }
             ; ?></p>
-                <img src="media/img/<?php echo($rows['image']); ?>.jpg" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" />
+                <img src="media/img/cover/<?php echo($rows['image']); ?>.webp" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" />
                 <p>*****</p>  <!--trouver un système de notation avec moyenne-->
                 <p class=resume><?php echo($rows['summary']); ?></p>
             </article>
@@ -49,7 +49,7 @@ article
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #897f66;
     width: 30%;
     height:60vh;
     margin-top: 2vh;
@@ -58,6 +58,7 @@ article
     padding-right: 1vw;
     overflow: auto;
     text-align:center;
+    background: #eed5a1cf;
 }
 article>h1
 {

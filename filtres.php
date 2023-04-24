@@ -107,10 +107,12 @@ main>.filtres_boite{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid black;
+    border: 2px solid #897f66;
     width: 18%;
+    min-width: 150px;
     padding-left: 1vw;
     height: relative;
+    background: #eed5a1cf;
 }
 fieldset{
     border:none;

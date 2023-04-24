@@ -6,7 +6,7 @@
         {
             $query=mysqli_query($mysqli, $sql);?>
         <div class="banderole">
-            <img src="media/img/<?php echo($rows['image']); ?>.jpg" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" /> <!--faire une banderole : CSS-->
+            <img src="media/img/cover/<?php echo($rows['image']); ?>.webp" alt="<?php echo($rows['title']); ?>" title="<?php echo($rows['title']); ?>" /> <!--faire une banderole : CSS-->
             <div class="band">
             <p><strong><em>
                 <?php if ($rows['book_saga']!==NULL){ ?>
@@ -35,7 +35,8 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #897f66;
+    background: #eed5a1cf;
     width: 98%;
     margin-bottom: 10px;
 }
