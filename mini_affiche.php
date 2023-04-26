@@ -58,7 +58,7 @@ article
     padding-right: 1vw;
     overflow: auto;
     text-align:center;
-    background: #eed5a1cf;
+    background: #ffeecacf;
 }
 article>h1
 {

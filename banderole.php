@@ -35,15 +35,15 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #897f66;
-    background: #eed5a1cf;
+    background: #ebddc0;
+    box-shadow: 2px 2px 5px #897f66;
     width: 98%;
     margin-bottom: 10px;
 }
 .banderole>img{
     width: 15%;
     margin:1%;
-    box-shadow: 5px 5px 2px black;
+    box-shadow: 3px 3px 5px black;
 }
 .band{
     display:flex;

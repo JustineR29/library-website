@@ -6,7 +6,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #c5b488;
+    background-color: #f4f1ebff;
     display:flex;
     flex-flow:column nowrap;
     justify-content: space-between;
@@ -20,6 +20,9 @@ main{
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 2vh;
+    background: url("pierre.png") bottom left no-repeat;
+    background-size: 10%;
+    background-position-x: 4vw;
 }
 a{
     text-decoration: none;

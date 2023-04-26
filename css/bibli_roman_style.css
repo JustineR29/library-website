@@ -6,7 +6,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #c5b488;
+    background-color: #f4f1ebff;
     display:flex;
     flex-flow:column nowrap;
     justify-content: space-between;
@@ -22,6 +22,9 @@ main{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    background: url("pierre.png") bottom left no-repeat;
+    background-size: 10%;
+    background-position-x: 4vw;
 }
 a{
     text-decoration: none;
@@ -35,8 +38,8 @@ main>section:nth-child(1){
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid #897f66;
-    background: #eed5a1cf;
+    box-shadow: 2px 2px 5px #897f66;
+    background: #ebddc0;
     width: 18%;
     padding-left: 1vw;
     height: relative;

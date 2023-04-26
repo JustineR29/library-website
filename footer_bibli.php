@@ -18,6 +18,6 @@ footer{
     background: #3A577C;
 }
 footer a{
-    color: #d6c49d;
+    color: #ffeecacf;
 }
 </style>

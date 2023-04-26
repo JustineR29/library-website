@@ -34,10 +34,10 @@ h3{
     margin-bottom: 1vh;
     font-size: medium;
 }
-form{
+main form{
     width: 100%;
 }
-form>textarea{
+main form>textarea{
     width: 100%;
     height: 10vh;
     border: 1px solid black;

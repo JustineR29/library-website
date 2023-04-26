@@ -28,8 +28,10 @@ header{
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
-    background: #3A577C;
+    background: #eee8dfff;
+    border-bottom: 2px solid #3A577C;
     margin-bottom: 10px;
+    box-shadow: 0px 5px 5px #897f66;
 }
 
 header>section:nth-child(1){
@@ -40,10 +42,11 @@ header>section:nth-child(1){
     width: 98%;
 }
 header>section:nth-child(1) p, header>section:nth-child(1) a{
-    color: #d6c49d;
+    color: #3A577C;
 }
 header>section:nth-child(1)>img{
     width: 30%;
+    filter: drop-shadow(2px 2px 2px #897f66cc);
 }
 
 header>section:nth-child(2){
@@ -59,7 +62,7 @@ header>section:nth-child(2){
 header>section:nth-child(2)>a{
     margin-right: 1vw;
     margin-left: 1vw;
-    color: #d8c8a3;
+    color: #3A577C;
 }
 
 </style>

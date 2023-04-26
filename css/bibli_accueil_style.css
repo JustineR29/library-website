@@ -17,7 +17,7 @@ a:hover{
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #c5b488;
+    background-color: #f4f1ebff;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -30,20 +30,21 @@ main{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    background: url("pierre.png") bottom left no-repeat;
+    background: url("pierre.webp") bottom left no-repeat;
     background-size: 10%;
     background-position-x: 4vw;
 }
+
 main>.livres_cases
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    border: 2px solid #897f66;
+    box-shadow: 2px 2px 5px #897f66;
     width: 80%;
     overflow:hidden;
-    background: #eed5a1cf;
+    background: #ebddc0;
 }
 main>.livres_cases>h1
 {
