@@ -26,6 +26,7 @@
 }
 .livre_emprunt>img{
     width:65%;
+    box-shadow: 2px 2px 5px #897c65;
 }
 .livre_emprunt>p{
     margin-bottom:0;

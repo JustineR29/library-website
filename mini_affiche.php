@@ -49,7 +49,7 @@ article
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid #897f66;
+    box-shadow: 2px 2px 5px #897f66;
     width: 30%;
     height:60vh;
     margin-top: 2vh;
@@ -58,7 +58,7 @@ article
     padding-right: 1vw;
     overflow: auto;
     text-align:center;
-    background: #ffeecacf;
+    background: #e6d3ae;
 }
 article>h1
 {
@@ -67,7 +67,7 @@ article>h1
 article>img
 {
     width:50%;
-    box-shadow: 3px 3px 2px black;
+    box-shadow: 3px 3px 5px black;
 }
 .resume
 {
