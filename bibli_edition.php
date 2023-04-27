@@ -26,7 +26,7 @@ if ($mysqli->connect_error) {
     <?php include 'header_bibli.php'?>
 
     <main>
-        <h1>ÉDITION</h1>
+        <h1>ÉDITIONS</h1>
         <section>
             <?php 
             $sql = "SELECT * FROM editions ORDER BY edition ASC";
