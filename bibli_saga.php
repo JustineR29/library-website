@@ -35,7 +35,7 @@ if ($mysqli->connect_error) {
             $query=mysqli_query($mysqli, $sql);?>
             <article><a href="<?php echo mb_strtolower($rows['saga']); ?>.php">
                 <h2><?php echo mb_strtoupper($rows['saga']); ?></h2>
-                <img src="media/img/<?php echo mb_strtolower($rows['saga']); ?>.webp" alt="<?php echo($rows['saga']); ?>" title="<?php echo($rows['saga']); ?>" />
+                <img src="media/img/cover/<?php echo mb_strtolower($rows['saga']); ?>.webp" alt="<?php echo($rows['saga']); ?>" title="<?php echo($rows['saga']); ?>" />
             </a></article>
             <?php
             }

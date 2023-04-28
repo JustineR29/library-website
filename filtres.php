@@ -126,6 +126,14 @@ ul
     list-style-type: none;
     margin-top: 0px;
     margin-left: -30px;
-    
 }
+.valider
+{
+    display: block;
+    background-color: #3A577C;
+    border: 2px solid #3A577C;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
 </style>

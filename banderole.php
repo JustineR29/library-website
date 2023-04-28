@@ -11,7 +11,7 @@
             <p><strong><em>
                 <?php if ($rows['book_saga']!==NULL){ ?>
                 <a href="<?php echo($rows['book_saga']); ?>.php"><?php echo($rows['book_saga']); ?></a><br/>
-                Tome <?php echo($rows['volume']); ?> : <a href="<?php echo($rows['title']); ?>.php"><?php echo($rows['title']); ?></a>
+                Tome <?php echo($rows['volume']); ?> : <a href="bibli_livre_type.php?i=<?=$rows['id_book']?>"><?php echo($rows['title']); ?></a>
                 <?php
                 } else { ?>
                <a href="bibli_livre_type.php?i=<?=$rows['id_book']?>"><?php echo($rows['title']); ?></a>
@@ -52,6 +52,8 @@
     align-items: flex-start;
     width: 60%;
     text-align:justify;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .titre_band {
     margin-bottom: 0;
@@ -63,5 +65,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 23%;
+    margin-left: 0.5vw;
+    text-align: center;
 }
 </style>
