@@ -27,9 +27,6 @@ main{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: space-around;
-    background: url("pierre.png") bottom left no-repeat;
-    background-size: 10%;
-    background-position-x: 4vw;
 }
 section{
     width: 100%;

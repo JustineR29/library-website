@@ -31,9 +31,6 @@ main{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background: url("pierre.png") bottom left no-repeat;
-    background-size: 10%;
-    background-position-x: 4vw;
 }
 section{
     width: 30%;

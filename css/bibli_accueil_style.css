@@ -30,9 +30,6 @@ main{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    background: url("pierre.webp") bottom left no-repeat;
-    background-size: 10%;
-    background-position-x: 4vw;
 }
 
 main>.livres_cases

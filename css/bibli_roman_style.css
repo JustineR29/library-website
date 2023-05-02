@@ -22,9 +22,7 @@ main{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    background: url("pierre.png") bottom left no-repeat;
-    background-size: 10%;
-    background-position-x: 4vw;
+
 }
 a{
     text-decoration: none;
