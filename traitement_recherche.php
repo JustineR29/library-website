@@ -16,7 +16,7 @@ if ($mysqli->connect_error) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="media/assets/book.png" type="image/x-icon">
+    <link rel="shortcut icon" href="media/assets/pierre_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/bibli_roman_style.css?v=<?php echo time(); ?>">
     <title>Bibliothèque - <?php echo($_POST['search']); ?></title>
 </head>
@@ -37,15 +37,16 @@ if ($mysqli->connect_error) {
             $sql = "SELECT * FROM books WHERE title LIKE '%$search%' OR book_author LIKE '%$search%' OR book_author_2 LIKE '%$search%' OR book_saga LIKE '%$search%' OR book_category LIKE '%$search%' OR book_tag_1 LIKE '%$search%' OR book_tag_2 LIKE '%$search%' OR book_tag_3 LIKE '%$search%' OR info LIKE '%$search%' OR keywords LIKE '%$search%'";
             $result = $mysqli->query($sql); ?>
             <p><?php echo(mysqli_num_rows($result)); ?> résultat(s) trouvé(s)</p>
-            </div><?php while($rows=$result->fetch_assoc())
+        </div>
+            <?php while($rows=$result->fetch_assoc())
         {
             $query=mysqli_query($mysqli, $sql);
                 include 'mini_affiche.php';
         }
         ?>
-        </section>
+    </section>
 
-        </main>
+    </main>
     <?php include 'footer_bibli.php'?>
 </body>
 </html>
