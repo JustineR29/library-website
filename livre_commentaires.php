@@ -1,3 +1,9 @@
+<?php 
+$sql = "SELECT * FROM library.books WHERE id_book=$i"; 
+   $result = $mysqli->query($sql);
+   while($rows=$result->fetch_assoc())
+{ $query=mysqli_query($mysqli, $sql); ?>
+
 <article class="livre_commentaires">
    <h3>Commentaires</h3>
         
@@ -22,6 +28,7 @@
             <?php } } ?>            
       </div>
 </article>
+<?php } ?>
 <style>
 .livre_commentaires{
     display: flex;

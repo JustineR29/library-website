@@ -22,13 +22,13 @@ footer main{
     height:inherit;
     background: url("css/pierre.webp") top no-repeat;
     background-size: 70px;
-    background-position-x: 3vw;
+    background-position-x: 2vw;
 }
 footer div{
     height: inherit;
     width: 90vw;
     position: relative;
-    left:9vw;
+    left: 8vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;

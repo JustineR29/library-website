@@ -97,7 +97,7 @@ if(isset($_GET['i'])){
             <p><?php echo($rows['pages']); ?> pages</p>
          </div>
          <div>
-            <p><a href="<?php echo lcfirst($rows['book_genre']); ?>.php"><?php echo($rows['book_genre']); ?></a></p>
+            <p><a href="bibli_genre_type.php?g=<?=$rows['genre']?>"><?php echo($rows['book_genre']); ?></a></p>
             <p><a href="<?php echo lcfirst($rows['book_category']); ?>.php"><?php echo($rows['book_category']); ?></a></p>
             <p>
             <?php/* $sql = "SELECT * FROM authors WHERE author=$auteur || author=$auteur2";

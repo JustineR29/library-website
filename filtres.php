@@ -15,13 +15,13 @@ if ($mysqli->connect_error) {
     <h1>Filtrer par :</h1>
     <form method="post" action="traitement_filtre.php">
         <fieldset><p><strong>Genre(s) :</strong><br/>
-        <label for="tous" class="box_perso">
+        <label for="tous_genre" class="box_perso">
             <input type="checkbox" name="genre[]" value="<?php 
             $sql = "SELECT * FROM genres ORDER BY genre ASC";
             $result = $mysqli->query($sql);
             while($rows=$result->fetch_assoc())
             { 
-            $query=mysqli_query($mysqli, $sql); echo($rows['genre']), ("','");}?>" checked id="tous"/>
+            $query=mysqli_query($mysqli, $sql); echo($rows['genre']), ("','");}?>" checked id="tous_genre"/>
             Tous les genres
             <span class="check_perso"></span>
         </label><br/>
@@ -42,13 +42,13 @@ if ($mysqli->connect_error) {
         </p></fieldset>
 
         <fieldset><p><strong>Catégorie(s) :</strong><br/>
-        <label for="tous" class="box_perso">
+        <label for="tous_category" class="box_perso">
             <input type="checkbox" name="category[]" value="<?php 
             $sql = "SELECT * FROM categories ORDER BY category ASC";
             $result = $mysqli->query($sql);
             while($rows=$result->fetch_assoc())
             {
-            $query=mysqli_query($mysqli, $sql); echo($rows['category']), ("','");}?>" checked id="tous"/>
+            $query=mysqli_query($mysqli, $sql); echo($rows['category']), ("','");}?>" checked id="tous_category"/>
             Toutes les catégories
             <span class="check_perso"></span>
         </label><br/>
@@ -69,13 +69,13 @@ if ($mysqli->connect_error) {
         </p></fieldset>
 
         <fieldset><p><strong>Époque(s) :</strong><br/>
-        <label for="tous" class="box_perso">
+        <label for="tous_period" class="box_perso">
             <input type="checkbox" name="period[]" value="<?php 
             $sql = "SELECT * FROM periods ORDER BY period ASC";
             $result = $mysqli->query($sql);
             while($rows=$result->fetch_assoc())
             {
-            $query=mysqli_query($mysqli, $sql); echo($rows['period']), ("','");}?>" checked id="tous"/>
+            $query=mysqli_query($mysqli, $sql); echo($rows['period']), ("','");}?>" checked id="tous_period"/>
             Toutes les époques
             <span class="check_perso"></span>
         </label><br/>
@@ -96,13 +96,13 @@ if ($mysqli->connect_error) {
         </p></fieldset>
 
         <fieldset><p><strong>Langue(s) :</strong><br/>
-        <label for="tous" class="box_perso">
+        <label for="tous_language" class="box_perso">
             <input type="checkbox" name="language[]" value="<?php 
             $sql = "SELECT * FROM languages ORDER BY language ASC";
             $result = $mysqli->query($sql);
             while($rows=$result->fetch_assoc())
             {
-            $query=mysqli_query($mysqli, $sql); echo($rows['language']), ("','");}?>" checked id="tous"/>
+            $query=mysqli_query($mysqli, $sql); echo($rows['language']), ("','");}?>" checked id="tous_language"/>
             Toutes les langues
             <span class="check_perso"></span>
         </label><br/>

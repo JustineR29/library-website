@@ -34,7 +34,7 @@ if ($mysqli->connect_error) {
             while($rows=$result->fetch_assoc())
             {
             $query=mysqli_query($mysqli, $sql);?>
-            <article><a href="<?php echo lcfirst($rows['category']); ?>.php">
+            <article><a href="bibli_categorie_type.php?c=<?=urlencode($rows['category'])?>">
                 <h2><?php echo mb_strtoupper($rows['category']); ?></h2>
                 <img src="media/img/tag/<?php echo lcfirst($rows['category']); ?>.webp" alt="<?php echo($rows['category']); ?>" title="<?php echo($rows['category']); ?>" />
             </a></article>

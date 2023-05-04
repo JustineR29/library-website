@@ -10,7 +10,7 @@
             <div class="band">
             <p><strong><em>
                 <?php if ($rows['book_saga']!==NULL){ ?>
-                <a href="<?php echo($rows['book_saga']); ?>.php"><?php echo($rows['book_saga']); ?></a><br/>
+                <a href="bibli_saga_type.php?s=<?=$rows['book_saga']?>"><?php echo($rows['book_saga']); ?></a><br/>
                 Tome <?php echo($rows['volume']); ?> : <a href="bibli_livre_type.php?i=<?=$rows['id_book']?>"><?php echo($rows['title']); ?></a>
                 <?php
                 } else { ?>

@@ -35,11 +35,11 @@ if ($mysqli->connect_error) {
             $selectedc=$_POST['category'];
             $selectedp=$_POST['period'];
             $selectedl=$_POST['language'];
-            $g=implode("','", $selectedg);
-            $c=implode("','", $selectedc);
-            $p=implode("','", $selectedp);
-            $l=implode("','", $selectedl);
-        $sql = "SELECT * FROM books WHERE book_genre IN ('$g') AND book_category IN ('$c') AND book_period IN ('$p') AND book_language IN ('$l') OR book_language_2 IN ('$l') ORDER BY book_author asc";
+            $genre=implode("','", $selectedg);
+            $category=implode("','", $selectedc);
+            $period=implode("','", $selectedp);
+            $language=implode("','", $selectedl);
+        $sql = "SELECT * FROM books WHERE book_genre IN ('$genre') AND book_category IN ('$category') AND book_period IN ('$period') AND (book_language IN ('$language') OR book_language_2 IN ('$language')) ORDER BY book_author asc";
         $result = $mysqli->query($sql);?>
         <p><?php echo(mysqli_num_rows($result)); ?> résultat(s) trouvé(s)</p>
         </div>

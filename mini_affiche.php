@@ -18,22 +18,22 @@ if ($mysqli->connect_error) {
                 <h1><strong><em>
                     
                 <?php if ($rows['book_saga']!==NULL){ ?>
-                <a href="<?php echo($rows['book_saga']); ?>.php"><?php echo($rows['book_saga']); ?></a><br/>
-                Tome <?php echo($rows['volume']); ?> : <a href="bibli_livre_type.php?i=<?=$rows['id_book']?>"><?php echo($rows['title']); ?></a>
+                <a href="bibli_saga_type.php?s=<?=urlencode($rows['book_saga'])?>"><?php echo($rows['book_saga']); ?></a><br/>
+                Tome <?php echo($rows['volume']); ?> : <a href="bibli_livre_type.php?i=<?=urlencode($rows['id_book'])?>"><?php echo($rows['title']); ?></a>
                 <?php
                 } else { ?>
-               <a href="bibli_livre_type.php?i=<?=$rows['id_book']?>"><?php echo($rows['title']);?></a>
+               <a href="bibli_livre_type.php?i=<?=urlencode($rows['id_book'])?>"><?php echo($rows['title']);?></a>
                <?php
                }
                ; ?></em></strong></h1>
                
                <p>
                <?php if ($rows['book_author_2']!==NULL){ ?>
-               <a href="<?php echo($rows['book_author']); ?>.php"><!--à revoir--><?php echo($rows['book_author']); ?></a> 
-               & <a href="<?php echo($rows['book_author_2']); ?>.php"><!--à revoir--><?php echo($rows['book_author_2']); ?></a>
+                <a href="bibli_auteur_type.php?a=<?=urlencode($rows['book_author'])?>"><?php echo($rows['book_author']); ?></a> 
+               & <a href="bibli_auteur_type.php?a=<?=urlencode($rows['book_author_2'])?>"><?php echo($rows['book_author_2']); ?></a>
                <?php
                } else { ?>
-               <a href="<?php echo($rows['book_author']); ?>.php"><!--à revoir--><?php echo($rows['book_author']); ?></a>
+               <a href="bibli_auteur_type.php?a=<?=urlencode($rows['book_author'])?>"><?php echo($rows['book_author']); ?></a>
                <?php
                }
             ; ?></p>

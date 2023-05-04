@@ -34,7 +34,7 @@ if ($mysqli->connect_error) {
             while($rows=$result->fetch_assoc())
             {
             $query=mysqli_query($mysqli, $sql);?>
-            <article><a href="<?php echo lcfirst($rows['origine']); ?>.php">
+            <article><a href="bibli_origine_type.php?o=<?=urlencode($rows['origine'])?>">
                 <h2><?php echo mb_strtoupper($rows['origine']); ?></h2>
                 <img src="media/img/flag/<?php echo lcfirst($rows['origine']); ?>.webp" alt="<?php echo($rows['origine']); ?>" title="<?php echo($rows['origine']); ?>" />    
             </a></article>

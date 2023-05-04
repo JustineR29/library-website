@@ -34,9 +34,9 @@ if ($mysqli->connect_error) {
             while($rows=$result->fetch_assoc())
             {
             $query=mysqli_query($mysqli, $sql);?>
-            <article><a href="<?php echo lcfirst($rows['tag']); ?>.php">
+            <article><a href="bibli_theme_type.php?t=<?=urlencode($rows['tag'])?>">
                 <h2><?php echo mb_strtoupper($rows['tag']); ?></h2>
-                <img src="media/img/tag/<?php echo lcfirst($rows['tag']); ?>.webp" alt="<?php echo($rows['tag']); ?>" title="<?php echo($rows['edition']); ?>" />
+                <img src="media/img/tag/<?php echo lcfirst($rows['tag']); ?>.webp" alt="<?php echo($rows['tag']); ?>" title="<?php echo($rows['tag']); ?>" />
             </a></article>
             <?php
             }

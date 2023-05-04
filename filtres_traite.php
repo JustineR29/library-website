@@ -15,7 +15,7 @@
                 while($rows=$result->fetch_assoc())
                 {
                 $query=mysqli_query($mysqli, $sql);?>
-                <input inherit type="checkbox" name="genre[]" value="<?php echo($rows['genre']); ?>" <?php if(isset($_POST['genre']) AND in_array($rows['genre'], $_POST['genre'])) {echo('checked="checked"');} ?>/>
+                <input type="checkbox" name="genre[]" value="<?php echo($rows['genre']); ?>" <?php if(isset($_POST['genre']) AND in_array($rows['genre'], $_POST['genre'])) {echo('checked="checked"');} ?>/>
                 <label for="<?php echo($rows['genre']); ?>"><?php echo($rows['genre']); ?></label><br/>
                 <?php
                 }

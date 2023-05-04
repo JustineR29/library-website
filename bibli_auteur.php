@@ -29,12 +29,12 @@ if ($mysqli->connect_error) {
         <h1>AUTEURS</h1>
         <section>
             <?php 
-            $sql = "SELECT author FROM authors ORDER BY author ASC";
+            $sql = "SELECT * FROM authors ORDER BY author ASC";
             $result = $mysqli->query($sql);
             while($rows=$result->fetch_assoc())
             {
             $query=mysqli_query($mysqli, $sql);?>
-            <article><a href="<?php echo mb_strtolower($rows['author']); ?>.php">
+            <article><a href="bibli_auteur_type.php?a=<?=urlencode($rows['author'])?>">
                 <h2><?php echo mb_strtoupper($rows['author']); ?></h2>
                 <img src="media/img/author/<?php echo mb_strtolower($rows['author']); ?>.webp" alt="<?php echo($rows['author']); ?>" title="<?php echo($rows['author']); ?>" />
             </a></article>
