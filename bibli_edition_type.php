@@ -14,6 +14,7 @@ if ($mysqli->connect_error) {
 <?php 
 if(isset($_GET['e'])){
    $e=strip_tags($_GET['e']);
+   mysqli_real_escape_string($e);
 ?>
 
 <!DOCTYPE html>
@@ -37,12 +38,14 @@ if(isset($_GET['e'])){
             
             
             <?php
-            $sql = "SELECT * FROM library.books WHERE book_edition='$e' ORDER BY book_author"; 
-            $result = $mysqli->query($sql);?>
+            $sql = "SELECT * FROM library.books WHERE book_edition LIKE '$e' ORDER BY book_author"; 
+            $result = $mysqli->query($sql);
+            ?>
             <h1><?php echo mb_strtoupper($e); ?></h1>
             <p><?php echo(mysqli_num_rows($result)); ?> livre(s) de cette édition</p>
         </div>
-            <?php while($rows=$result->fetch_assoc())
+        <?php
+        while($rows=$result->fetch_assoc())
         {
             $query=mysqli_query($mysqli, $sql);
                 include 'mini_affiche.php';

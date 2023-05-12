@@ -29,7 +29,8 @@ a{
     color: black;
 }
 a:hover{
-    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #897f66;
 }
 .titres
 {

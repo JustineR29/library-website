@@ -34,8 +34,8 @@ if ($mysqli->connect_error) {
             while($rows=$result->fetch_assoc())
             {
             $query=mysqli_query($mysqli, $sql);?>
-            <article><a href="bibli_edition_type.php?e=<?=urlencode($rows['edition'])?>">
-                <h2><?php echo mb_strtoupper($rows['edition']); ?></h2>
+            <article><a href="bibli_edition_type.php?e=<?=($rows['edition'])?>">
+                <h2><?php echo mb_strtoupper($rows['edition']);?></h2>
                 <img src="media/img/edition/<?php echo mb_strtolower($rows['edition']); ?>.webp" alt="<?php echo($rows['edition']); ?>" title="<?php echo($rows['edition']); ?>" />  
             </a></article>
             <?php

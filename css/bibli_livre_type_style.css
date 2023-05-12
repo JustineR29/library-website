@@ -19,14 +19,18 @@ body>main{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
+    background: #ebddc0;
+    padding: 2vh 1vw;
+    box-shadow: 2px 2px 5px #897f66;
 }
 a{
     text-decoration: none;
     color: black;
 }
 a:hover{
-    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #897f66;
 }
 
 
