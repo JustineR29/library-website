@@ -48,7 +48,7 @@ if ($mysqli->connect_error) {
       <section>
       <h2>Inscription</h2>
       <p>Pas encore inscrit ?</br>
-      Creéez-vous un compte dès à présent pour pouvoir emprunter des livres et donner votre avis !</p>
+      Créez-vous un compte dès à présent pour pouvoir emprunter des livres et donner votre avis !</p>
       <form method="post" action="traitement_inscription.php">
          <fieldset>
             <legend>Informations personnelles</legend>

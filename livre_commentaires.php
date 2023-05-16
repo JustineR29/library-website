@@ -12,7 +12,7 @@ $sql = "SELECT * FROM library.books WHERE id_book=$i";
       <input class="envoyer" type="submit" value="Envoyer"/>
       </form>
 
-      <div class="postes">
+      <div class="tous_postes">
          <?php 
             $sql = "SELECT * FROM opinion";
             $result = $mysqli->query($sql);
@@ -22,9 +22,11 @@ $sql = "SELECT * FROM library.books WHERE id_book=$i";
                while($rows=$result->fetch_assoc())
                {
                $query=mysqli_query($mysqli, $sql);?>
+               <div class="postes">
                <p><?php echo($rows['opinion_user']); ?></p>
                <p><?php echo($rows['date_com']); ?></p>
                <p><?php echo($rows['commentary']); ?></p>
+               </div>
             <?php } } ?>            
       </div>
 </article>
@@ -48,12 +50,38 @@ main form>textarea{
     width: 100%;
     height: 10vh;
     border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff8e9;
 }
-.postes{
+textarea:focus{
+    outline:none;
+    background: white;
+    border: 2px solid #3A577C;
+    box-shadow: 2px 2px 2px #897f66cc;
+}
+.tous_postes{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
+}
+.postes{
+    background-color: #e6d3ae;
+    border-radius: 10px;
+    padding: 5px;
+}
+.envoyer{
+    background-color: #3A577C;
+    border-radius: 15px;
+    color: #eee8dfff;
+    padding: 5px;
+    border: none;
+    margin-top: 3px;
+}
+.envoyer:hover{
+    background-color: #3d6393;
+    color: #f4f1ebff;
+    box-shadow: 2px 2px 2px #897f66cc;
+    cursor: pointer;
 }
 </style>

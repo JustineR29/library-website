@@ -96,4 +96,7 @@
 .colonne1>p, .colonne2>p{
     margin-bottom: 0;
 }
+a{
+    color: black;
+}
 </style>

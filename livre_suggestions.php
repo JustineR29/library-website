@@ -15,11 +15,13 @@
 </article>
 <style>
 .livre_suggestions{
-    border: 2px solid black;
     width: 98%;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     margin-top: 2vh;
+    background-color: #d6c49d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #897f66;
 }
 .livre_suggestions>h1{
     text-align: center;
@@ -30,5 +32,8 @@ ul
     margin-top: 0px;
     margin-left: -30px;
     margin-bottom: 10px;
+}
+a{
+    color: black;
 }
 </style>

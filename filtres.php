@@ -159,6 +159,10 @@ main>.filtres_boite{
 input[type=checkbox]{
     visibility: hidden;
 }
+label:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 1px black;
+}
 .check_perso{
     position: absolute;
     top: 0;
@@ -170,6 +174,7 @@ input[type=checkbox]{
     border-radius: 4px;
     cursor: pointer;
 }
+
 .check_perso:hover{
     background-color: #ac9f7f;
     box-shadow: 2px 2px 2px #897f66cc;

@@ -59,6 +59,7 @@ article
     overflow: auto;
     text-align:center;
     background: #e6d3ae;
+    scrollbar-color: #897f66 #d6c49d;
 }
 article>h1
 {
