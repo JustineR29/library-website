@@ -37,7 +37,7 @@ if(isset($_GET['a'])){
             
             
             <?php
-            $sql = "SELECT * FROM library.books WHERE book_author='$a' OR book_author_2='$a' ORDER BY date ASC"; 
+            $sql = "SELECT * FROM library.books WHERE book_author='$a' OR book_author_2='$a' OR book_authors LIKE '%$a%' ORDER BY date ASC"; 
             $result = $mysqli->query($sql);?>
             <h1><?php echo mb_strtoupper($a); ?></h1>
             <p><?php echo(mysqli_num_rows($result)); ?> livre(s) de cet auteur</p>

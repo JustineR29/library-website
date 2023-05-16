@@ -51,7 +51,7 @@ main form>textarea{
     height: 10vh;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #fff8e9;
+    background-color: #f4f1ebff;
 }
 textarea:focus{
     outline:none;

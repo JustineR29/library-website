@@ -28,22 +28,23 @@ h1{
     margin-bottom: 0;
 }
 
-main{
+body>main{
     width: 98%;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
 }
-section{
+body main>section{
     width: 30%;
 }
-main>section>form{
+body main>section>form{
     box-shadow: 2px 2px 5px #897f66;
     background: #ebddc0;
+    border-radius: 5px;
 }
 
-fieldset{
+body section fieldset{
     border: none;
     display: flex;
     flex-flow: column wrap;
@@ -54,22 +55,43 @@ fieldset{
     font-size: large;
     padding-top: 0;
     padding-bottom: 0;
+    width: 98%;
 }
-legend{
+form>fieldset>legend{
     font-weight: bold;
     margin: auto;
     padding-bottom: 0;
 }
-input{
+form>fieldset>p>input{
     border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f4f1ebff;
+    width: 90%;
 }
-input:required{
-    border: 2px solid black;
+p>input:focus{
+    outline:none;
+    background: white;
+    border: 2px solid #3A577C;
+    box-shadow: 2px 2px 2px #897f66cc;
+}
+p>input:required:focus{
+    border: 2px solid #3A577C;
 }
 
 
-.valider{
+body .inscrire, body .connecter{
     display: block;
-    margin:auto;
+    margin: auto;
     margin-top: 1vh;
+    background-color: #3A577C;
+    border-radius: 15px;
+    color: #f4f1ebff;
+    padding: 5px;
+    border: none;
+}
+body .inscrire:hover, body .connecter:hover{
+    background-color: #3d6393;
+    color: white;
+    box-shadow: 2px 2px 2px #897f66cc;
+    cursor: pointer;
 }

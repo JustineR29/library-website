@@ -32,15 +32,15 @@ if ($mysqli->connect_error) {
       <form method="post" action="traitement_connexion.php">
          <fieldset>
          <p>
-            <label for="mail">E-mail :</label>
-            <input type="email" name="mail" id="mail" size="20" placeholder="Ex: Marie.Dupont@gmail.com"/> <br/>
-
-            <p>
-            <label for="pass">Mot de passe :</label>
-            <input type="password" name="password" id="passwoard" size="20"/> <br/>
+            <label for="mail">E-mail :</label><br />
+            <input type="email" name="mail" id="mail" size="40" placeholder="Ex: Marie.Dupont@gmail.com"/>
+         </p>
+         <p>
+            <label for="pass">Mot de passe :</label><br />
+            <input type="password" name="password" id="password" size="30"/> <br/>
          </p></fieldset>
       </form>
-      <input class="valider" type="submit" value="Valider"/>
+      <input class="connecter" type="submit" value="Me connecter"/>
       <!--Conditions de validation, traitement...
       <p>Heureux de vous revoir <?php /*echo($rows['name']);*/ ?> !</p>-->
       </section>
@@ -53,28 +53,29 @@ if ($mysqli->connect_error) {
          <fieldset>
             <legend>Informations personnelles</legend>
             <p>
-            <label for="nom">Nom * :</label>
+            <label for="nom">Nom * :</label><br />
             <input type="text" name="nom" id="nom" size="20" placeholder="Ex: Dupont" required/> <br/>
 
-            <label for="prenom">Prénom * :</label>
+            <label for="prenom">Prénom * :</label><br />
             <input type="text" name="prenom" id="prenom" size="20" placeholder="Ex: Marie" required/> <br/>
 
-            <label for="age">Date de naissance * :</label>
-            <input type="date" name="age" id="age" size="20" required/><br/>
-        </p></fieldset>
+            <label for="age">Date de naissance * :</label><br />
+            <input type="date" name="age" id="age" size="10" required/><br/>
+            </p>
+         </fieldset>
 
          <fieldset>
             <legend>Contact</legend>
             <p>
-            <label for="mail">E-mail * :</label>
-            <input type="email" name="mail" id="mail" size="20" placeholder="Ex: Marie.Dupont@gmail.com" required/> <br/>
+            <label for="mail">E-mail * :</label><br />
+            <input type="email" name="mail" id="mail" size="40" placeholder="Ex: Marie.Dupont@gmail.com" required/> <br/>
             
-            <label for="tel">Numéro de téléphone :</label>
-            <input type="tel" name="tel" id="tel" size="20"/> <br/>
-
-         </p></fieldset>
+            <label for="tel">Numéro de téléphone :</label><br />
+            <input type="tel" name="tel" id="tel" size="30"/> <br/>
+            </p>
+         </fieldset>
       </form>
-         <input class="valider" type="submit" value="Valider"/>
+         <input class="inscrire" type="submit" value="M'inscrire"/>
 
       <!--Conditions, traitement du formulaire, réponse attendue
       <p>Votre compte à été créé. Bienvenue !</br>
