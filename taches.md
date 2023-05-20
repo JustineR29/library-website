@@ -4,6 +4,7 @@ Liste de choses à faire
 Ensemble du site
 
     Travailler la structuration  (cf schema)
+    Responsive design : mobile
 
         OK Trouver un nom pour le site
         OK Trouver un logo
