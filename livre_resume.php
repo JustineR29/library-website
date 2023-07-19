@@ -9,7 +9,7 @@ $sql = "SELECT * FROM library.books WHERE id_book=$i";
       <p><strong>Information</strong> : <?php echo($rows['info']); ?></p>
    <?php } ?>
    
-   <p class="resume"><?php echo($rows['summary']); ?></p>
+   <p itemprop="description" class="resume"><?php echo($rows['summary']); ?></p>
 </article>
 <?php } ?>
 <style>

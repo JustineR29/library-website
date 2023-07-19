@@ -34,7 +34,7 @@ if ($mysqli->connect_error) {
         
         <?php
             $search = $_POST['search'];
-            $sql = "SELECT * FROM books WHERE title LIKE '%$search%' OR book_author LIKE '%$search%' OR book_author_2 LIKE '%$search%' OR book_authors LIKE '%$search%' OR book_saga LIKE '%$search%' OR book_category LIKE '%$search%' OR book_tag_1 LIKE '%$search%' OR book_tag_2 LIKE '%$search%' OR book_tag_3 LIKE '%$search%' OR info LIKE '%$search%' OR keywords LIKE '%$search%'";
+            $sql = "SELECT * FROM books WHERE title LIKE '%$search%' OR book_author LIKE '%$search%' OR book_author_2 LIKE '%$search%' OR book_authors LIKE '%$search%' OR book_saga LIKE '%$search%' OR book_category LIKE '%$search%' OR book_edition LIKE '%$search%' OR book_tag_1 LIKE '%$search%' OR book_tag_2 LIKE '%$search%' OR book_tag_3 LIKE '%$search%' OR info LIKE '%$search%' OR keywords LIKE '%$search%'";
             $result = $mysqli->query($sql); ?>
             <p><?php echo(mysqli_num_rows($result)); ?> résultat(s) trouvé(s)</p>
         </div>
